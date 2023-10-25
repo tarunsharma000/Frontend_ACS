@@ -1,0 +1,25 @@
+<table class="table table-sm table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Farmer Id</th>
+        <th scope="col">Deale Id</th>
+        <th scope="col">Transaction Id</th>
+        <th scope="col">Crop</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of paymentDtls;index as i">
+        <th scope="row">{{i+1}}</th>
+        <td>{{farmer[i]}}</td>  
+        <td>{{dealer[i]}}</td>
+        <td>{{data.transactionid}}</td>
+        <td>{{data.cropid}}</td>
+        <td>{{data.amount}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  
